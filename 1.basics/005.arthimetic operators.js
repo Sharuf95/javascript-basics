@@ -7,7 +7,7 @@
 108 % 5 // 3 Modulo (remainder value)
 
 9 - 'Sharuf'; Nan // (Not a number)
-'9'+ 'Sharuf'; '6Sharuf'
+'9'+ 'Sharuf'; '9Sharuf'
 '9' - '7';  // 2 (Javascript convert strings to numbers only for -,*,/,% operators)
 '9'+ '9'; // 99 (Javascript consider values has string and it will combine the values )
 '6' * '3' // 18 

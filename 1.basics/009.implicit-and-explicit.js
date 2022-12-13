@@ -14,5 +14,5 @@ conversation to boolean Explicity
 Number('23') + 7; // 30
 
 conversation to boolean Explicity
-Boolean (''); // false
-Boolean (2) ==true; // true
+boolean (''); // false
+boolean (2) ==true; // true
