@@ -1,6 +1,6 @@
-//const readline = require('readline-sync');
+// const readline = require('readline-sync');
 
-import readline from 'readline-sync';
+// import readline from 'readline-sync';
 
 const firstvalue = +readline.question(`please enter the value of a = `);
 const secondvalue = Number(readline.question(`please enter the value of b =`));
