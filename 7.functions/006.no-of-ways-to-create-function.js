@@ -42,3 +42,24 @@ console.log(`multiplication of 25 and 25 is ${twomultiplication}`);
 
 const addOne = add();
 console.log(`addition of value is ${addOne}`);
+
+const additionn = add (10,1);
+console.log(`addition of 10 and 1 value is ${additionn}`);
+
+
+
+/*
+function printdata(firstname,lastname, work ) {
+  return firstname,lastname, work
+    }
+  const newdata = printdata('Shaik', 'Sharuf', 'Sharu');
+  console.log (newdata);
+   // undefined 
+  
+  
+  function printdata(firstname,lastname, work ) {
+  return firstname,lastname, work
+    }
+  const newdata = printdata('Shaik, Sharuf, Sharu');
+  console.log (newdata);
+  */
