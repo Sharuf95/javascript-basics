@@ -1,7 +1,7 @@
 // Arrow function 
 const add = (a,b) => {
     return a + b ; 
-} // formula
+} // formula 
 
 
 const sumof2plus8 = add();

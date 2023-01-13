@@ -1,9 +1,23 @@
+/* 
+Three types of functions
+1.function add () {
+} // function declaration
+
+2.const multiplication = function () {
+} // function expression
+
+const division = () => {
+} Arrow function
+*/
+
 // 1. Function declaration
             // here `a` and `b` are parameters of add function
 
 function add(a,b) {
 return (a+b);
 }
+// function () {}
+
 
  // 2. Function expression
 const subtraction = function (a,b) {
