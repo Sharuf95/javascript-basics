@@ -1,8 +1,17 @@
-// We should restrict user to enter only Green Red Yellow;
+/* We should restrict user to enter only Green Red Yellow;
+    [Array index should be in reverse value --> Binary value for if-else-if-with-input.js]
+    EX:- 
+    0 -- -1
+    1 -- 0
+    2 -- 1
+    3 -- 2[Array index should be in reverse ->Binary value for(if-else-if-with-input.js)]
+    4 -- 3
+    5 -- 4 
+*/
 import readline from 'readline-sync';
 import chalk from 'chalk';
 
-console.log(`Practicing first time*********************************************************`);
+console.log(`Practicing First time*********************************************************`);
 const GREEN  =  0;
 const RED    =  1;
 const YELLOW =  2;
