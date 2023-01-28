@@ -35,7 +35,7 @@ console.log(`Welcome ${Students_Names[index]}`)
 index++; // index = index + 1
 };
 
-console.log("Type One with for loop--------------------------------------------------------------------");
+console.log("Type two with for loop--------------------------------------------------------------------");
 for (
 
  let i = 0;i < Names_length; i++) {
