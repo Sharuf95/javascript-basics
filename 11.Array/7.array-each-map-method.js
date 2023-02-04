@@ -18,11 +18,20 @@ function fnwithoutreturn() {
 const total = 100 +10
 };
 
+function fnwithreturnvalue() {
+  const total_value = 100+1
+  return total_value
+};
+
 const Valueone = havingreturnvalue(); // It will return value 
 const ValueTwo = fnwithoutreturn(); // It will return undefined because no return statement
+const ValueThree = fnwithreturnvalue(); // Now It will return value 
 
-console.log(`Value One WithReturn  ${Valueone}`);
+console.log(`Value One WithReturn = ${Valueone}`);
 console.log(`Value Two WithoutRetun ${ValueTwo}`);
+console.log(`Value Third fnwithreturnvalue = ${ValueThree} `);
+
+
 
 [].forEach;
 /*
@@ -30,6 +39,9 @@ console.log(`Value Two WithoutRetun ${ValueTwo}`);
   callbackfn : (value : never, index : number, array : never []) => void
   thisArg?: any) : void
   .forEach yapudu return chesayedi undefined
+
+  values.forEach (() => {}) ==> Undefined
+  [1,2,3,4].forEach((value) => {return value + 100 }); ==> Undefined
 */
 
 
@@ -40,14 +52,21 @@ console.log(`Value Two WithoutRetun ${ValueTwo}`);
  thisArg?: any) : U[]
  Calls a defined callback function on each element of an array and returns an array that 
  contains the results
+
+ values.map (() => {}) ==> [ Undefined ,Undefined, Undefined, Undefined ] it shows Array
+  [1,2,3,4].map((value) => {return value + 100 }); ==> [ 101 , 102 , 103 , 104 ]   
+   //                           1,2,3,4    + 100
+
 */
 student[student.length] = 'Sharu'
+
 const welcome_students_using_forEach = student.forEach((student) => {
 const message = `Welcome ${student}`;
 console.log(message);
 return message;
-});
-console.log(`Values using forEach`,welcome_students_using_forEach);
+});// .forEach method yapudu em return cheyadhu [ undefined ] chupisthundi
+console.log(`Values using forEach`,welcome_students_using_forEach); 
+
 console.log('-------------------------------------------------------------------------------------');
 const WelcomeStudents_forEach = student.forEach ( (student) => {
   const messagee = `Welcome ${student}`
@@ -64,83 +83,129 @@ console.log('-------------------------------------------------------------------
 const WelcomeStudents_map = student.map ( (student) => {
   const messagee = `Welcome ${student}`
   console.log (messagee);
-  return messagee; // .forEach method yapudu em return cheyadhu [ undefined ] chupisthundi
+  return messagee; 
 });
-console.log(`Values Using forEach2`,WelcomeStudents_map);
+console.log(`Values Using map`,WelcomeStudents_map);
+
+
+
+
 
 console.log('First time-------------------------------------------------------------------');
-
-const ShoppingPrices = [50,100,150,200,250] // Apply Discount of 10%
+                    //   0  1   2   3   4
+const ShoppingPrices = [56,450,329,458] // Apply Discount of 10%
 const discountPrices = [];
 const DISCOUNT_PERCENTAGE = 10;
 
+function applyDiscount(amount,discountPercentage = 10 ) {
+  // Discount formula : ( value *  DISCOUNT_PERCENTAGE ) / 100
+  const discount = (amount * discountPercentage) /  100; // ex :- 2000 x 10 = 200
+  const discountamount = amount - discount ; //  here 2000 - 200 = 1800
+  return discountamount;
+  // return  amount - discount; ==> we can ( invoke r call ) like this also line 112 & 113
+}
+
 for (let index = 0; index < ShoppingPrices.length; index++){
   const value = ShoppingPrices[index];
-  // Discount formula : (value * discount ) / 100
-  const discount = (value * DISCOUNT_PERCENTAGE)/100
-  const discountamount = value - discount
+  // Discount formula : ( value *  DISCOUNT_PERCENTAGE ) / 100
+  // const discount = (value * DISCOUNT_PERCENTAGE) / 100
+  // const discountamount = value - discount; we can ( call r invoke ) enter like 120 and 121 line also.
+  const discountamount = applyDiscount(value,DISCOUNT_PERCENTAGE);
   discountPrices.push(discountamount)
 };
 
 
 const discount_values_using_map = ShoppingPrices.map((amount) => {
-const discount_amount = (amount,DISCOUNT_PERCENTAGE);
-return discount_amount
+  const discountAmount = applyDiscount(amount,DISCOUNT_PERCENTAGE)
+  return discountAmount
 });
 
-const map_using_single_Statement = ShoppingPrices.map(amount => {
-  return amount - 10 ;
-})
+const map_using_single_statement = ShoppingPrices.map(amount => {
+  return amount - 10
+}); // Answer [ 46, 440, 319, 448 ]
 
-const map_using_single_statement =  ShoppingPrices.map(amount => amount - 10);
+const map_using_single_statement1 = ShoppingPrices.map(amount => amount + 1);
+// we can write like this also in single statement Answer  [ 57, 451, 330, 459 ]
+
+const map_using_single_statement2 = ShoppingPrices.map(amount => amount - 1); // [ 55, 449, 328, 457 ] 
+
+console.log(ShoppingPrices);
+console.log(discountPrices);
+console.log(discount_values_using_map);
+console.log(map_using_single_statement);
+console.log(map_using_single_statement1);
+console.log(map_using_single_statement2);
 
 
 
 
+console.log("Practicing Second time----------------------------------------------------------------");
 
+const Cmr_shopping_prices = [200,300,400,599];
+const Cmr_discount_prices = [];
+const Cmr_Discount_Percentage = 10
 
-console.log('Second time-------------------------------------------------------------------');
-const CMR_Shopping = [300,350,400,450,500]
-const CMR_Discount_Prices = [];
-const CMR_DISCOUNT_PERCENTAGE = 10
-// for loop
-for (let index = 0; index < CMR_Shopping.length;index++) {
-const value = CMR_Shopping[index];
-const CMR_Discount = ( value * CMR_DISCOUNT_PERCENTAGE ) / 100
-const CMR_DISCOUNT_AMOUNT = value - CMR_Discount
-CMR_Discount_Prices.push(CMR_DISCOUNT_AMOUNT)
+function apply_cmr_amount (amount,discountpercentage = 10){
+  // Discount formula : ( value *  Cmr_discount_prices ) / 100
+  const discount = (amount * discountpercentage) / 100 ;
+  const discount_amount = amount - discount;
+  return discount_amount;
 };
 
+ for (let index = 0;index < Cmr_shopping_prices.length;index++){
+  const value = Cmr_shopping_prices[index]
+  // Discount formula : ( value *  Cmr_Discount_Percentage ) / 100
+  // const  discount = ( value *  Cmr_Discount_Percentage ) / 100
+  // const discountamount = value - discount;
+  const discountamount =  apply_cmr_amount(value,Cmr_Discount_Percentage);
+  Cmr_discount_prices.push(discountamount);
+};
 
-console.log(ShoppingPrices);
-console.log(discountPrices);
-console.log(CMR_Shopping);
-console.log(CMR_Discount_Prices);
-console.log(discount_values_using_map);
-console.log(map_using_single_Statement);
-console.log(map_using_single_statement);
+  const cmr_discount_values_using_map = Cmr_shopping_prices.map((amount) =>{
+  const discountamount = apply_cmr_amount(amount,Cmr_Discount_Percentage)
+  return discountamount
+});
 
-/*
-console.log('with function-------------------------------------------------------------------');
-applyDiscount();
-const KLM_SHOPPING = [550,600,650,700,750]
-const KLM_DISCOUNT_PRICES = [];
-const KLM_PERCENTAGE = 10;
+  const cmr_map_using_single_statement = Cmr_shopping_prices.map(amount => {
+  return amount - 1});
 
+ const cmr_map_using_single_statement1 = Cmr_shopping_prices.map(amount => amount + 2); 
+  
+ const cmr_map_using_single_statement2 =  Cmr_shopping_prices.map(amount => amount + 3);
+  
+  
 
-function applyDiscount (amount,KLM_PERCENTAGE = 10) {
-  const KLM_Discount = (amount * KLM_PERCENTAGE) / 100
-  return amount -  KLM_Discount;
-}
-for (let i = 0;i < KLM_SHOPPING.length;i++){
-  const value = KLM_SHOPPING[i];
-  const discountamount = applyDiscount(value,KLM_PERCENTAGE);
-  discountPrices.push(discountamount)
+ console.log(Cmr_shopping_prices);
+ console.log(Cmr_discount_prices);
+ console.log(cmr_discount_values_using_map);
+ console.log(cmr_map_using_single_statement);
+ console.log(cmr_map_using_single_statement1);
+ console.log(cmr_map_using_single_statement2);
 
-}
-console.log(ShoppingPrices);
-console.log(discountPrices);
-applyDiscount();
+ /*
+ [].push(123); // [123]
 
+ [100, 200].push(300); // [100, 200, 300]; 
 
-*/
+ [].forEach( () => {} );
+
+ [].forEach( function() {} );
+
+ ['Syed', 'Zakeer', 'Hussain'].forEach( (value) => { console.log(`Welcome {value}`) } );
+
+ // 'Syed' => ('Syed') => { console.log(`Welcome Syed') }
+
+ // 'Zakeer' => ('Zakeer') => { console.log(`Welcome Zakeer`) }
+
+ // 'Hussain'
+
+ ['A', 'B', 'C'].map(char => char.toLowerCase());
+
+ // A => A => A.toLowerCase() ===> a
+
+ // B => B => B.toLowerCase() ===> b
+
+ // C => C => C.toLowerCase() ===> c
+
+ */
+

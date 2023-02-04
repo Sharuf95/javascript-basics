@@ -29,8 +29,8 @@ const Students_Names = [
 
 let index = 0;
 const Names_length =Students_Names.length
-//        0  <   3  => true
-while (index < Names_length) { // while condition 0 < 3  => true
+//        0  <   5  => true
+while (index < Names_length) { // while condition 0 < 5  => true
 console.log(`Welcome ${Students_Names[index]}`)
 index++; // index = index + 1
 };
@@ -123,8 +123,13 @@ function iterateMarks(v,i,arr) {
 students.forEach(iterateMarks);
 
 
+
+
+
 const loop = function(value) {
     console.log (`Loop value ${value}`)
-}
+} // .push method
+
 const number = [10,20,30];
 number.forEach(loop)
+
