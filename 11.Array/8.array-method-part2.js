@@ -37,8 +37,8 @@ console.log(students_joinedd);
 //    0      1      2        3        4       5       6        7
 // ['Ram','yesh','Shaik', 'Sharuf','Kiran', 'Sai','Manoj', 'Viswananth']
 
-const first_two_students = all_students.slice(0,3); // It will shows only students from 0 to 2 but
-console.log(first_two_students); // we have to enter from (0,3)
+const first_two_students = all_students.slice(0,3); // Manam for example (0,3) tisukunapudu manaki index lo unna 0,1,2 ==> ['Ram','yesh','Shaik'] matramaye tisukuntundi,endukantaye manaki kavalsindi 0 to 2 but oka value ekkuva tisukovali so ( 0 to 3 )  but mana original array ni yapudu modify cheyadhu ==> It will shows only students from 0 to 2 but we have to enter from (0,3) 
+console.log(first_two_students); 
 // Answer :- [ 'Ram', 'yesh', 'Shaik' ]
 
 const js_students = all_students.slice(0); // It will shows all students bcoz index value is 0 from all 
@@ -156,8 +156,8 @@ const users_list = [
  console.log(all_students);
 
  const delete_students = all_students.splice(2,1);
- // .splice(); ==> .splice(); antaye edi aithe manam parantis() lo enter chesthamo dantlo first value delete chesthundi
- console.log(delete_students); // [ 'Sharuf' ] remove chesthundi
+ // for example .splice lo (2) ani enter chesthaye 2 tharvatha nundi unna prathi okka value ending daka delete avthundi and (2) ki mundu unna value matramaye array lo chupisthundi, alagai manam just oka single value delete cheyali antaye for example (2,1) ani enter chestaye index value lo unna 2-value matramaye delete chestundi 2,1 ani pedithaye 2 anaye value okataye delete avalani ardam.....
+ console.log(delete_students); // Shaik delete chesthundi....migatha array lo values chupisthundi
  console.log(all_students); 
 
 
