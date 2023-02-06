@@ -11,7 +11,7 @@ A function declaration can be broken down into the following pieces.
   - Arguments. The values are to be used as parameters in the function.
   - Return value. By default, functions will return undefined but can return the result of computation when the body contains a return statement.
 */
-Function declaration
+// Function declaration
 
 
 console.log("Practice  first time (1).......................................................................");
