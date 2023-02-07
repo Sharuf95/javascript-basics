@@ -1,4 +1,17 @@
 console.log("CLASSNOTES----------------------------------------------------");
+
+// [].push(VALUE);
+// [].splice(INDEX, END_INDEX);
+
+
+// [].forEach;  => undefined
+// [].map;      => SAME LENGTH OF ARRAY
+// [].filter;   => LESS OR EQUAL LENGTH OF ARRAT
+// [].reduce;   => SINGLE VALUE
+// [].some;
+// [].find;
+
+
 // manam single value (Index value 2 ) ni function chesthunam
 const marks = [
     45, // 0
