@@ -139,4 +139,4 @@ console.log (`Type_One_Problem :-4**********************************************
         console.log (`JEWELLERY_TOTAL_BILL_AMOUNT = ${JEWELLERY_TOTAL_BILL_AMOUNT}`);
 
 
-        
+    
