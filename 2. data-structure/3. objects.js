@@ -32,3 +32,20 @@
  "full name" : "Shaik Sharuf"
  })["name"]
    // 'Shaik Sharuf'
+
+
+   console.log("Class_Notes");
+
+   /*
+({
+  "name": "Zakeer",
+  designation: "Developer",
+  friends: ["Harish", "Harsha"],
+  married: true,
+  company: {
+    name: "SAP",
+    position: "UI Designer"
+  },
+  "full name": "Syed Zakeer Hussain"
+})["company"]
+   */

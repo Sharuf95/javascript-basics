@@ -11,3 +11,24 @@
 	}
 
 }
+
+
+console.log("Class_Notes");
+
+/*
+{
+  "name": "Syed Zakeer",
+  "location": "Guntur",
+  "married": true,
+  "workingDays": 5,
+  "skills": [
+    "html",
+    "css",
+    "js"
+  ],
+  "companyInfo": {
+    "name": "SAP",
+    "position": "Developer"
+  }
+}
+*/
