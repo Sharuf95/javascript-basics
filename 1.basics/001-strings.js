@@ -23,3 +23,25 @@
 'Im from "CANADA"'
 > 'Im from \"England\"'
 'Im from "England"'
+
+
+console.log("Class__Notes")
+/*
+"Hello World"
+'Hello World'
+`Hello World`
+
+"I am from \"Guntur\""
+
+'I am from \'Guntur'
+
+"Name: Sharuf, City: Guntur Designation: UI Dev"
+
+`
+Name: Sharuf
+City: Guntur
+Designation: UI Dev
+`
+
+`5 plus 5 is ${5+5}`
+*/
