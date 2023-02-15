@@ -245,7 +245,7 @@ const marks = [
 
 
  /*
-
+ Output :-
 $ node 10.Array-functional-reduce-method.js 
 Sum of numbers using WHILE LOOP 425
 ---------------------------------------------------------------------
