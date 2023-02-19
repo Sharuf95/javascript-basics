@@ -1,11 +1,14 @@
-import chalk from "chalk";
-import { getCategory, displayProductInfo, getProduct } from "./utils.js"
+ // fs stands for filesystem
+ // Utils lo unna data ni index.js ki tisukoni osthunam
+ import chalk from 'chalk';
+ import {getCategory,display_product_Info,getproduct} from "./Utils.js"
 
-console.log(chalk.bgGreen("Welcome to our shopping app"));
-const selectedCategory = getCategory();
-if (selectedCategory) {
-  const product = getProduct(selectedCategory);
-  displayProductInfo(product);
+  console.log(chalk.bgGreen("Welcome To Our Shopping Mall App.........."));
+
+ const Selected_Category = getCategory();
+ if ( Selected_Category) {
+ const product = getproduct(Selected_Category)
+ display_product_Info(product);
 }
 
 
@@ -19,6 +22,23 @@ if (selectedCategory) {
 console.log("----------------------------------------CLASS__NOTES-----------------------------------------");
 
 /*
+ 1. first Class
+
+ import chalk from 'chalk';
+ import readline from 'readline-sync';
+
+ import {categories} from "./Utils.js"
+
+ console.log(chalk.bgGreen("Welcome To Our Shopping Mall App.........."));
+
+ readline.keyInSelect(categories);
+
+*/
+
+console.log("----------------------------------Continution Second Class----------------------------------")
+
+/*
+2.Seocnd Class
 
 import chalk from "chalk";
 import { getCategory, displayProductInfo, getProduct } from "./utils.js"
@@ -30,23 +50,4 @@ if (selectedCategory) {
   displayProductInfo(product);
 }
 
-*/
-
-
-
-
-
-
-
-
-
-/*
-
-var Display_material = material.map( material => {
-  const firstletterCapital = material[0].toUpperCase();
-  const remainingLetters = material.substring(1).toLowerCase();
-  return firstletterCapital + remainingLetters
-})
-console.log( Display_material)
-const UserSelectedMaterial_Index = readline.keyInSelect( Display_material)
 */
