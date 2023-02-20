@@ -1,0 +1,40 @@
+Local System 
+  -> 0.0.0.0
+  -> 127.0.0.1
+  -> Localhost
+
+
+Server
+  -> 8.8.8.8
+  -> google.com
+
+
+Connected to Internet System
+(Act)    ->
+(BSNL)   ->
+(Airtel) ->
+
+Dynamic / Static IP
+
+
+
+
+console.log("-------------------------------CLASS NOTES-------------------------------")
+
+Local System
+  -> 0.0.0.0
+  -> 127.0.0.1
+  -> localhost
+
+
+Server
+  -> 8.8.8.8
+  -> google.com
+
+
+Connected to Internet System 
+(Act)   -> 
+(BSNL)  ->
+(Airtel)->  
+
+Dynamic / Static IP
