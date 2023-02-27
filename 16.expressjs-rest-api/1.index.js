@@ -1,4 +1,4 @@
-/*const express = require("express");
+const express = require("express");
 const app = express ();
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
@@ -114,9 +114,7 @@ console.log("server running on http://localhost:2001")
 
 console.log("---------------------------------------PRACTICE---------------------------------------");
 
-
-
-*/
+/*
 
 const express    = require("express");
 const app        = express()
@@ -227,7 +225,7 @@ app.listen(2001,() => {
 console.log("server running on http://localhost:2001")                   
 });
 
-
+*/
 
 
 
