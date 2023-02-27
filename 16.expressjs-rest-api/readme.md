@@ -100,6 +100,14 @@ app.delete( USER_ENDPOINT,function () {
 ```
 
 
+### CRUD Operations on Users 
+
+1.**C**reate (Create a new user through **POST** API).
+2.**R**ead (Get user details through **GET** API).
+3.**U**pdate (Update user details through **PUT** API).
+4.**D**elete (Remove user from the system through **DELETE** API).
+
+
 
 
 
